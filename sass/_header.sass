@@ -1,0 +1,79 @@
+.header
+    color: white
+    height: 658px
+    background: url(../bg/bg.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 70px
+    &__top
+        display: flex
+        align-items: center
+        .wrapper__text
+            margin-left: 18px
+            .top__text
+                font-size: 30px
+            .bottom__text
+                font-size: 22px
+    .shadow
+        width: 850px
+        position: absolute
+        top: 257px
+
+        box-shadow: 0px 0px 17px 20px rgba(255, 255, 255, 0.25)
+    .navigation
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 82px
+        width: 850px
+        font-size: 22px
+        a
+            color: white
+            text-decoration: none
+        .ask
+            cursor: pointer
+        .cont
+            cursor: pointer
+        .osv
+            cursor: pointer
+        .prise
+            cursor: pointer
+    .tagline
+        margin-top: 180px
+        font-size: 70px
+        font-weight: 100
+
+@media screen and ( max-width: 375px )
+    .header
+        padding-bottom: 40px
+        padding-top: 30px
+        height: auto
+        background-position-x: -382px
+        .shadow
+            display: block
+            width: 85%
+            top: 351px
+        .navigation
+            margin-top: 30px
+            flex-direction: column
+            width: auto
+            font-size: 18px
+            .ask
+                margin-bottom: 15px
+            .cont
+                margin-bottom: 15px
+            .osv
+                margin-bottom: 15px
+        img
+            width: 60px
+        .wrapper__text
+            margin-left: 18px
+            .top__text
+                font-size: 20px
+            .bottom__text
+                font-size: 15px
+        .tagline
+            margin-top: 80px
+            font-size: 25px
+            text-align: center
+            
